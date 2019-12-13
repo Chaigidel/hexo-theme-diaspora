@@ -1,8 +1,11 @@
 # 头部菜单，title: link
 menu:
-  Whoami: /whoami
-  Github: https://github.com/Fechin
-  Twitter: https://twitter.com/FechinLi
+  Archives: /archives
+  Categories: /categories
+  Tags: /tags
+  About: /about
+  Github: https://github.com/Chaigidel
+  # Twitter: https://twitter.com/FechinLi
 
 # 是否显示目录
 TOC: false
@@ -16,16 +19,17 @@ mp3:
   - http://link.hhtjim.com/qq/001faIUs4M2zna.mp3
 
 # 首页封面图, 为空时取文章的cover作为封面
-welcome_cover: # /img/welcome-cover.jpg
+welcome_cover: /img/0.png
 
 # 默认文章封面图
-cover: /img/cover.jpg
+cover: 20
 
 # 是否关闭默认滚动条
 scrollbar: true
 
 # Gitalk 评论插件（https://github.com/gitalk/gitalk）
 gitalk:
+    enable: false
     # 是否自动展开评论框
     autoExpand: false
     # 应用编号
@@ -44,7 +48,7 @@ gitalk:
     distractionFreeMode: false
 
 # 网站关键字
-keywords: Fechin
+keywords: Chaigidel
 
 # 要使用google_analytics进行统计的话，这里需要配置ID
 google_analytics: 
@@ -54,3 +58,11 @@ favicon: /img/favicon.png
 
 # rss文件
 rss: atom.xml
+
+providers:
+    # Name or URL of the JavaScript and/or stylesheet CDN provider
+    cdn: '[cdnjs]https://cdnjs.loli.net/ajax/libs/${ package }/${ version }/${ filename }'
+    # Name or URL of the webfont CDN provider
+    fontcdn: 'https://fonts.loli.neccct/${type}?family=${fontname}'
+    # Name or URL of the webfont Icon CDN provider
+    iconcdn: fontawesome
