@@ -7,7 +7,7 @@ menu:
   Github: https://github.com/Chaigidel
 
 # 是否显示目录
-TOC: false
+TOC: true
 
 # 是否自动播放音乐
 autoplay: false
