@@ -1,10 +1,24 @@
+<div class="site-intro" style="height: 50vh;">
+    <% var bgURL = page.cover || '/img/' + String(Math.floor(Math.random()*theme.cover+1) + '.png'); %>
+    <div class="site-intro-placeholder"></div>
+    <div class="site-intro-img" style="background-image: url(<%- url_for(bgURL) %>)"></div>
+    <div class="site-intro-meta">
+        <h1 class="intro-title">
+            <%- truncate(strip_html(page.title), {length: 80, omission: '...'}) || '[Untitled Post]' %>
+        </h1>
+        <div class="post-intros">
+            <% if(page.tags.length) { %>
+                <%- partial('_partial/post/tag', {post: page}) %>
+            <% } %>
+            <div class="post-intro-meta" style="margin-top: .2rem;">
+                <%- date(page.date, "YYYY/MM/DD") %>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="article">
     <div class='main'>
-        <h1 class="title"><%- page.title %></h1>
-        <div class="stuff">
-            <span><%- page.date.locale("zh-cn").format("MMMM DD, YYYY") %></span>
-            <%- partial('_partial/post/tag', {post: page}) %>
-        </div>
         <div class="content markdown">
             <%- page.content %>
         </div>
@@ -16,4 +30,3 @@
         </div>
     <%}%>
 </div>
-
