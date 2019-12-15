@@ -138,7 +138,7 @@ body.touch,body.touch .article {margin-top:0;}
 .intro-subtitle { font-size:2rem; }
 .post-tags-list { margin-top:10px;display:table; }
 .post-tags-list-item { float:left;padding:2px 5px; background-color: rgba(204,204,204,0.2); margin-right: 15px; }
-.post-tags-list-link, .site-intro-meta { color:#fff; font-size: 15px; font-weight: bold;}
+.post-tags-list-link, .site-intro-meta { line-height: 1.5em; color:#fff; font-size: 15px; font-weight: bold;}
 .page .content:before {display:none;}
 .comment {margin:50px auto;}
 .comment.link,.downloadlink {cursor:pointer;letter-spacing:5px;border:1px solid #dadada;width:170px;text-align:center;color:#666;font-size:14px;padding:10px 0;}
